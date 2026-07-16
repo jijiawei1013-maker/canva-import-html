@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Growth / Next Stage</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #05080B;
+  font-family: "PingFang SC", "苹方-简", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #F4F5F6;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+}
+.page {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  background: #05080B;
+}
+
+/* Top Title Area */
+.top-area {
+  position: absolute;
+  top: 72px;
+  left: 96px;
+  right: 96px;
+}
+.eyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  color: #19DCE5;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.main-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #F4F5F6;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.sub-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #B8BDC2;
+  line-height: 1.6;
+  max-width: 1400px;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+
+/* Main Content Area */
+.content-area {
+  position: absolute;
+  top: 320px;
+  left: 96px;
+  right: 96px;
+  bottom: 80px;
+  display: flex;
+}
+
+/* Left Column */
+.left-col {
+  width: 42%;
+  padding-right: 60px;
+}
+.section-title-left {
+  font-size: 32px;
+  font-weight: 700;
+  color: #19DCE5;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.section-line-left {
+  width: 48px;
+  height: 4px;
+  background: #19DCE5;
+  margin-bottom: 48px;
+}
+
+/* Right Column */
+.right-col {
+  width: 42%;
+  padding-left: 60px;
+}
+.section-title-right {
+  font-size: 32px;
+  font-weight: 700;
+  color: #788BC9;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.section-line-right {
+  width: 48px;
+  height: 4px;
+  background: #788BC9;
+  margin-bottom: 48px;
+}
+
+/* Item styling */
+.item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #2A3238;
+  margin-bottom: 36px;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item-number-left {
+  font-size: 64px;
+  font-weight: 700;
+  color: #19DCE5;
+  line-height: 1;
+  width: 80px;
+  flex-shrink: 0;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.item-number-right {
+  font-size: 64px;
+  font-weight: 700;
+  color: #788BC9;
+  line-height: 1;
+  width: 80px;
+  flex-shrink: 0;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.item-divider {
+  width: 1px;
+  background: #2A3238;
+  margin: 0 28px;
+  align-self: stretch;
+  min-height: 80px;
+}
+.item-content {
+  flex: 1;
+  padding-top: 8px;
+}
+.item-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #F4F5F6;
+  margin-bottom: 10px;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.item-desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: #B8BDC2;
+  line-height: 1.5;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+
+/* Middle Arrow Area */
+.middle-col {
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.arrow-bg {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  opacity: 0.15;
+}
+.arrow-bg svg {
+  width: 100%;
+  height: 100%;
+}
+.middle-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #151D27;
+}
+.middle-text .me {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  opacity: 0.4;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.middle-text .arrow-symbol {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 8px 0;
+  opacity: 0.4;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+.middle-text .owner {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  opacity: 0.4;
+  font-family: "PingFang SC", "苹方-简", sans-serif;
+}
+</style>
+</head>
+<body>
+<div class="page" data-document-role="page">
+  <!-- Top Title Area -->
+  <div class="top-area">
+    <div class="eyebrow">PERSONAL GROWTH / NEXT STAGE</div>
+    <div class="main-title">从完成任务，到开始建立自己的判断与方法</div>
+    <div class="sub-title">几个月的 GEO 项目实践，让我不只是掌握了一项新业务，也开始重新理解自己在策略、执行和项目协同中的价值。</div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="content-area">
+    <!-- Left Column -->
+    <div class="left-col">
+      <div class="section-title-left">PERSONAL GROWTH</div>
+      <div class="section-line-left"></div>
+
+      <div class="item">
+        <div class="item-number-left">01</div>
+        <div class="item-divider"></div>
+        <div class="item-content">
+          <div class="item-title">主动拆解问题</div>
+          <div class="item-desc">从寻找标准答案，转向自己建立解决路径</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-number-left">02</div>
+        <div class="item-divider"></div>
+        <div class="item-content">
+          <div class="item-title">开始对结果负责</div>
+          <div class="item-desc">不只完成方案，也关注执行、监测与复盘</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-number-left">03</div>
+        <div class="item-divider"></div>
+        <div class="item-content">
+          <div class="item-title">沉淀自己的方法</div>
+          <div class="item-desc">把项目经验转化为可持续复用的能力</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="middle-col">
+      <div class="arrow-bg">
+        <svg viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 50 L120 50 L120 0 L200 200 L120 400 L120 350 L0 350 Z" fill="#151D27"/>
+        </svg>
+      </div>
+      <div class="middle-text">
+        <div class="me">ME</div>
+        <div class="arrow-symbol">→</div>
+        <div class="owner">OWNER</div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-col">
+      <div class="section-title-right">EXPECTATION</div>
+      <div class="section-line-right"></div>
+
+      <div class="item">
+        <div class="item-number-right">01</div>
+        <div class="item-divider"></div>
+        <div class="item-content">
+          <div class="item-title">明确业务标准</div>
+          <div class="item-desc">统一服务边界、交付内容与验收口径</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-number-right">02</div>
+        <div class="item-divider"></div>
+        <div class="item-content">
+          <div class="item-title">建立稳定协作</div>
+          <div class="item-desc">让策略、技术、内容与媒体更顺畅地衔接</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-number-right">03</div>
+        <div class="item-divider"></div>
+        <div class="item-content">
+          <div class="item-title">获得完整项目机会</div>
+          <div class="item-desc">在真实结果中继续验证和提升能力</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
